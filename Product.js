@@ -8,7 +8,7 @@ const productSchema = new mongoose.Schema({
   category: { type: String, required: true },
   imageURL: { type: String },
 },
-  {versionKey:false}
+  { timestamps: true, versionKey:false}
 );
 
 const Product = mongoose.model('Product', productSchema);
