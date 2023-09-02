@@ -12,7 +12,7 @@ const orderSchema = new mongoose.Schema({
   shippingAddress: { type: String, required: true },
   status: { type: String, required: true, default: 'Pending' },
 },
-  {versionKey:false}
+  { timestamps: true, versionKey:false}
 
 );
 
