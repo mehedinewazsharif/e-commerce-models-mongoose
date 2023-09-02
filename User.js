@@ -10,7 +10,7 @@ const userSchema = new mongoose.Schema({
     address: { type: String },
     phoneNumber: { type: String },
   },
-  {versionKey:false}
+  { timestamps: true, versionKey:false}
 );
 
 // Relationship with CartItem: When a user is deleted, remove associated cart items.
